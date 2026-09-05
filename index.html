@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Étudiant Informatique, Cybersécurité & IA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * * { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0f15;
+    color: #e5e5e5;
+    line-height: 1.6;
+}
+header {
+    background: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1920') center/cover no-repeat;
+    padding: 3rem 1rem;
+    color: #fff;
+    position: relative;
+}
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+}
+header .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: auto;
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000;
+}
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+nav a {
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #4fa3ff;
+}
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    background: #1e90ff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: 0.2s;
+}
+.btn:hover {
+    background: #0b6ed6;
+}
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+section {
+    background: #161a23;
+    padding: 1.8rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #222;
+}
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 0.4rem;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+.tag {
+    display: inline-block;
+    background: #1e90ff33;
+    color: #4fa3ff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    margin: 0.2rem;
+    font-size: 0.85rem;
+    border: 1px solid #1e90ff55;
+}
+.project {
+    border-left: 3px solid #1e90ff;
+    padding-left: 1rem;
+    margin-bottom: 1.2rem;
+}
+.project h3 {
+    font-size: 1.2rem;
+    color: #4fa3ff;
+}
+.project small {
+    color: #aaa;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #777;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div>
+            <h1>Donatien Alonzo</h1>
+            <p>Étudiant en Bachelor Informatique, Cybersécurité & IA – IPSSI Marne-la-Vallée</p>
+            <p>Passionné par la cybersécurité.</p>
+            <a href="https://www.mediafire.com/file/ocn1ivoa0za4626/ALONZO-Donatien-cv.pdf/file" class="btn" target="_blank">Télécharger mon CV</a>
+        </div>
+        <nav>
+            <a href="#apropos">À propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section id="apropos">
+        <h2>À propos</h2>
+        <p>
+            Je suis étudiant en 1ère année de Bachelor Informatique, Cybersécurité & IA à l’IPSSI Marne-la-Vallée. Passionné par la cybersécurité et fortement intéressé par les métiers des forces de l’ordre, je m’oriente vers un parcours mêlant protection des systèmes, investigation numérique et sécurité opérationnelle.
+J’aime comprendre comment fonctionnent les infrastructures, identifier leurs failles et mettre en place des solutions robustes pour les sécuriser. Je développe également des compétences en automatisation avec Python et en administration système, afin de renforcer ma polyvalence technique.
+Mon objectif est d’évoluer vers un rôle alliant cybersécurité, analyse de menaces et contribution à la protection des organisations et des citoyens.
+        </p>
+    </section>
+
+    <section id="competences">
+        <h2>Compétences</h2>
+        <div class="grid-2">
+            <div>
+                <h3>Développement</h3>
+                <span class="tag">Python</span>
+                <span class="tag">PHP</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">SQL</span>
+                <ul>
+                    <li>Création de petits scripts d’automatisation</li>
+                    <li>Développement de pages web et formulaires sécurisés</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Cybersécurité</h3>
+                <span class="tag">Principes de sécurité</span>
+                <span class="tag">Authentification</span>
+                <ul>
+                    <li>Sensibilisation aux vulnérabilités courantes (injections, XSS, etc.)</li>
+                    <li>Bonnes pratiques de gestion des mots de passe et des droits</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Systèmes & Réseaux</h3>
+                <span class="tag">Windows Server</span>
+                <span class="tag">Active Directory</span>
+                <span class="tag">DNS</span>
+                <span class="tag">DHCP</span>
+                <span class="tag">Linux (bases)</span>
+                <ul>
+                    <li>Installation et configuration d’un domaine AD</li>
+                    <li>Notions de routage, adressage IP et services réseau</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Virtualisation</h3>
+                <span class="tag">Proxmox</span>
+                <ul>
+                    <li>Création et gestion de conteneurs sous Proxmox</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2>Projets</h2>
+
+        <div class="project">
+            <h3>Déploiement d’un domaine Active Directory</h3>
+            <small>Windows Server, AD DS, DNS, DHCP</small>
+            <p><strong>Contexte :</strong> Projet scolaire visant à mettre en place une infrastructure de domaine pour une petite entreprise.</p>
+            <p><strong>Objectifs :</strong> Installer un contrôleur de domaine, configurer les utilisateurs, les OU, les GPO et les services réseau.</p>
+            <ul>
+                <li>Installation de Windows Server et promotion en contrôleur de domaine</li>
+                <li>Configuration de DNS et DHCP pour le réseau interne</li>
+                <li>Création d’unités d’organisation et de stratégies de groupe</li>
+            </ul>
+            <p><strong>Ce que j’ai appris :</strong> structure d’un domaine AD, gestion centralisée des utilisateurs, importance des GPO pour la sécurité.</p>
+        </div>
+
+        <div class="project">
+            <h3>Cluster Proxmox et conteneurs LXC</h3>
+            <small>Proxmox, LXC, Réseau virtuel</small>
+            <p><strong>Contexte :</strong> Mise en place d’un environnement de virtualisation pour héberger plusieurs services.</p>
+            <p><strong>Objectifs :</strong> Créer un cluster simple, déployer des conteneurs et organiser le réseau.</p>
+            <ul>
+                <li>Installation de Proxmox et création de conteneurs LXC</li>
+                <li>Segmentation réseau de base pour les services</li>
+                <li>Réflexion sur la sécurité et l’isolation des services</li>
+            </ul>
+            <p><strong>Ce que j’ai appris :</strong> principes de virtualisation, gestion des ressources, bases de la sécurité dans un environnement virtualisé.</p>
+        </div>
+
+        <div class="project">
+            <h3>Application de quiz</h3>
+<small>HTML, CSS, PHP, SQL, Git</small>
+
+<p><strong>Contexte :</strong> Projet personnel / scolaire visant à développer une application de quiz interactive avec gestion dynamique des questions et des scores.</p>
+
+<p><strong>Objectifs :</strong> Concevoir une logique algorithmique permettant d’adapter les questions, calculer les scores en temps réel et assurer un suivi propre du code grâce à Git.</p>
+
+<ul>
+    <li>Conception d’une logique algorithmique pour gérer des questionnaires dynamiques</li>
+    <li>Gestion automatique des scores selon les réponses de l’utilisateur</li>
+    <li>Utilisation rigoureuse de Git avec des commits réguliers pour assurer le suivi des versions</li>
+    <li>Hébergement du code source et de l’historique du projet sur GitHub</li>
+</ul>
+            </ul>
+            <p><strong>Ce que j’ai appris :</strong> importance de la validation des entrées, gestion sécurisée des mots de passe.</p>
+        </div>
+<div class="project">
+    <h3>Analyse de cybersécurité de sites web – Stage chez METM</h3>
+    <small>Cybersécurité Web, Audit de sécurité, OWASP, HTML, SQL</small>
+
+    <p><strong>Contexte :</strong> Stage de 8 semaines réalisé chez METM du 18 mai au 10 juillet 2026. La mission consistait à analyser la sécurité de plusieurs sites internet de l’entreprise afin d’identifier des vulnérabilités potentielles et proposer des améliorations. </p>
+
+    <p><strong>Objectifs :</strong> Étudier le fonctionnement des applications web, détecter les points faibles en matière de sécurité et recommander des mesures correctives adaptées.</p>
+
+    <ul>
+        <li>Analyse de pages web et de formulaires sensibles</li>
+        <li>Identification de risques liés aux injections et aux vulnérabilités web</li>
+        <li>Détection de l'absence de Content Security Policy (CSP)</li>
+        <li>Analyse des ressources externes et vérification des mécanismes d'intégrité (SRI)</li>
+        <li>Étude des bonnes pratiques de validation des entrées utilisateur</li>
+        <li>Rédaction d'une documentation technique et de recommandations de sécurité</li>
+    </ul>
+
+    <p><strong>Compétences développées :</strong> audit de sécurité web, analyse de vulnérabilités, sécurisation des formulaires, compréhension des mécanismes CSP, protection contre les injections SQL et XSS, méthodologie d'analyse et rédaction technique.</p>
+</div>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-list">
+            <p><strong>Email :</strong> alonzodonatien595@gmail.com</p>
+            <p><strong>LinkedIn :</strong> <a href="#" target="_blank"> https://www.linkedin.com/in/donatienalonzo </a></p>
+            <p><strong>GitHub :</strong> <a href="#" target="_blank">https://github.com/donatiensopharat61-lang</a></p>
+            <p><strong>CV :</strong> <a href="cv.pdf" target="_blank">https://www.mediafire.com/file/ocn1ivoa0za4626/ALONZO-Donatien-cv.pdf/file</a></p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © <span id="year"></span> Donatien Alonzo – Portfolio Étudiant Informatique, Cybersécurité & IA
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+>
